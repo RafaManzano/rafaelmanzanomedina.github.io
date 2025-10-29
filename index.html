@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Rafael Manzano — Desarrollador Senior de Android</title>
+    <meta name="description" content="Portfolio de Rafael Manzano — Desarrollador Senior de Android (Kotlin, MVVM, Android TV)" />
+    <!-- Tailwind Play CDN for quick styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {"theme": {"extend": {}}, "darkMode": "class"}
+    </script>
+    <style>
+      /* small extra styles */
+      html,body,#root { height:100%; }
+      body { background: linear-gradient(180deg,#070710 0%, #0b1020 100%); }
+    </style>
+  </head>
+  <body class="antialiased text-gray-200">
+    <div id="root"></div>
+
+    <!-- React + ReactDOM (UMD) -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- Framer Motion UMD -->
+    <script src="https://unpkg.com/framer-motion/dist/framer-motion.umd.js"></script>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
