@@ -1,16 +1,32 @@
-# Portfolio de Rafael Manzano
+# Portfolio - Rafael Manzano
 
-Sitio estático listo para desplegar en GitHub Pages.
-Contenido generado: página estática (index.html + app.js) y el CV en `/CV-Rafael-Manzano.pdf`.
+Proyecto React + Vite + Tailwind preparado para desplegar en GitHub Pages.
+Homepage configurado: https://RafaManzano.github.io
 
-## Cómo usar
+## Uso local
 
-1. Descomprime `rafael_portfolio.zip`.
-2. Coloca todo el contenido en el branch `gh-pages` o en la rama principal si usas `/docs` en GitHub Pages.
-3. Sube los archivos al repositorio `rafaelmanzanomedina.github.io` y GitHub Pages servirá `index.html` automáticamente.
-4. El botón "Descargar CV" apunta al archivo `CV-Rafael-Manzano.pdf` incluido.
+1. Instalar dependencias:
+```bash
+npm install
+```
 
-## Notas técnicas
+2. Levantar servidor de desarrollo:
+```bash
+npm run dev
+```
 
-- Interfaz creada con Tailwind via CDN (play CDN) y React/Framer Motion vía UMD para evitar pasos de compilación.
-- Para producción se recomienda migrar a un build con Vite/React y Tailwind configurado si desea optimización.
+3. Crear build de producción:
+```bash
+npm run build
+```
+
+## Despliegue en GitHub Pages
+
+Este proyecto usa `gh-pages`. Configura un repositorio llamado `RafaManzano.github.io` y ejecuta:
+
+```bash
+npm install --save-dev gh-pages
+npm run deploy
+```
+
+Esto hará push de la carpeta `dist` a la rama `gh-pages` y servirá tu página como https://RafaManzano.github.io
